@@ -209,5 +209,5 @@ Through its dual-gate architecture, Aether provides:
 * **Operational Resilience:** Intelligent model routing and stateful retry logic to maintain high availability.
 * **Absolute Auditability:** A forensic-grade audit trail for every interaction, ensuring full transparency in AI decision-making.
 
-> **Aether treats AI safety as infrastructure — not prompt engineering.**\
+> **Aether treats AI safety as infrastructure — not prompt engineering.**
 
