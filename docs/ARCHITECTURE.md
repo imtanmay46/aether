@@ -46,6 +46,8 @@ Project Aether is designed around the following non-negotiable goals:
 
 At a conceptual level, Aether functions as an **AI firewall + API gateway**.
 
+<img width="511" height="532" alt="Screenshot 2026-01-16 at 6 21 33 PM" src="https://github.com/user-attachments/assets/c2232c3d-b0a8-44dd-9f33-8ad56b680caa" />
+
 
 Each layer has a **single responsibility** and no shared mutable state.
 
