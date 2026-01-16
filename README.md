@@ -197,12 +197,6 @@ Aether combines deterministic and probabilistic safeguards:
 - Enforces safety as deterministic infrastructure logic
 
 ---
-
-## Demo Walkthrough
-
-<To be added!>
-
----
 ## Summary
 
 Aether transforms AI safety from an aspirational prompt-engineering goal into a **deterministic infrastructure requirement**.\
