@@ -329,13 +329,12 @@ These are accepted tradeoffs aligned with enterprise security priorities.
 
 ## 11. Conclusion
 
-Aether demonstrates that **AI safety can be enforced deterministically** without relying on model alignment alone.
+Aether demonstrates that AI safety is most effective when enforced as a deterministic infrastructure layer rather than a probabilistic prompt engineering exercise.\
+By decoupling governance from the underlying model, Aether establishes a consistent security boundary that does not rely solely on the internal alignment of the LLM.
 
-By treating safety as infrastructure, Aether provides:
+Through this framework, Aether provides:
+* **Predictable Behavior:** Safety logic is executed independently, ensuring consistent enforcement regardless of the model provider.
+* **Auditable Decisions:** A centralized telemetry layer captures all governance events, enabling forensic review and regulatory compliance.
+* **Structural Guarantees:** Multi-stage filtering creates a fail-closed environment that actively prevents data leakage and model-induced harm.
 
-- Predictable behavior  
-- Auditable decisions  
-- Strong guarantees against data leakage and misuse  
-
-> **AI safety is not a prompt.**  
-> **It is a boundary.**
+In summary, Aether treats AI safety as a fundamental boundary within the enterprise tech stack—ensuring that LLM utility is never achieved at the expense of organizational security.
