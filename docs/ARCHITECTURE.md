@@ -56,6 +56,8 @@ Each layer has a **single responsibility** and no shared mutable state.
 
 The following steps represent the deterministic path of every request.
 
+![Workflow Overview](/docs/assets/workflow_overview.png)
+
 >Figure: Implementation Trace showing active enforcement nodes.
 
 ### Step 1: Request Intake
