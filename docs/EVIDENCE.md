@@ -130,7 +130,7 @@ This confirms **privacy-first enforcement at the boundary**.
 - Audit log record showing redacted prompt  
   ![Audit Log Row](/docs/assets/audit_log_row.png)
   
-  >Figure 4: Automated Data Minimization. Real-time verification of the system's ability to identify and redact non-sensitive PII (<PERSON>, <EMAIL_ADDRESS>) before data persistence. This demonstrates that semantic intent is preserved for operational utility while sensitive identifiers are scrubbed at the gateway level, satisfying strict data privacy requirements.
+  >Figure 4: Automated Data Minimization. Real-time verification of the system's ability to identify and redact both sensitive (CREDIT_CARD) and non-sensitive PII (PERSON, EMAIL_ADDRESS) before data persistence. This demonstrates that semantic intent is preserved for operational utility while sensitive identifiers are scrubbed at the gateway level, satisfying strict data privacy requirements.
 
 **Demonstrates**
 
