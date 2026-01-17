@@ -3,7 +3,7 @@
 
 **Document Version:** 1.0  
 **Status:** Public (Design-Level Disclosure)  
-**Last Updated:** 2026-01-16  
+**Last Updated:** 2026-01-17  
 
 ---
 
@@ -171,9 +171,9 @@ Heuristics are evaluated **before ML-based scoring** to enable fast rejection.
 
 **If PII is detected:**
 
-1. The entity is redacted  
-2. The request is blocked (403)  
-3. The incident is logged  
+1. Sensitive PII is redacted and the request is blocked (403)  
+2. Non-sensitive PII may be redacted and allowed  
+3. All cases are logged with redacted persistence
 
 ---
 
@@ -201,7 +201,7 @@ Aether dynamically routes requests to balance cost, latency, and reasoning depth
 
 ### 6.1 Complexity Classification
 
-**Model:** Gemini 2.5 Flash-Lite
+**Model:** Gemini 2.5 Flash-Lite (gemini-2.5-flash-lite)
 
 Used to estimate:
 
@@ -217,8 +217,8 @@ This step is **non-generative and lightweight**.
 
 | Request Type           | Model                     |
 |-----------------------|---------------------------|
-| Simple / factual       | Gemini 2.5 Flash-Lite     |
-| Multi-step reasoning   | Gemini Flash-3 Preview    |
+| Simple / factual       | Gemini 2.5 Flash-Lite   (gemini-2.5-flash-lite)  |
+| Multi-step reasoning   | Gemini Flash-3 Preview  (gemini-3-flash-preview)  |
 
 This routing ensures:
 
