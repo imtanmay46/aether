@@ -3,7 +3,7 @@
 
 **Document Version:** 1.0  
 **Status:** Public (Design-Level Disclosure)  
-**Last Updated:** 2026-01-16  
+**Last Updated:** 2026-01-17  
 
 ---
 
@@ -48,12 +48,15 @@ At a conceptual level, Aether functions as an **AI firewall + API gateway**.
 
 <img width="511" height="532" alt="Screenshot 2026-01-16 at 6 21 33 PM" src="https://github.com/user-attachments/assets/c2232c3d-b0a8-44dd-9f33-8ad56b680caa" />
 
-
 Each layer has a **single responsibility** and no shared mutable state.
 
 ---
 
 ## 4. Request Lifecycle (Step-by-Step)
+
+The following steps represent the deterministic path of every request.
+
+>Figure: Implementation Trace showing active enforcement nodes.
 
 ### Step 1: Request Intake
 - All client prompts enter Aether through a single API surface.
@@ -163,7 +166,7 @@ Aether explicitly separates:
 - Vendor execution
 - Observability
 
-No component assumes another behaved correctly.
+> No component assumes that another behaves correctly. This separation limits the blast radius in the event of component failure or compromise.
 
 This mirrors principles from:
 - Zero Trust networking
