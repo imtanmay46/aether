@@ -3,7 +3,7 @@
 
 **Document Version:** 1.0  
 **Status:** Public (Design-Level Disclosure)  
-**Last Updated:** 2026-01-16  
+**Last Updated:** 2026-01-17  
 
 ---
 
@@ -124,7 +124,7 @@ Risks introduced by:
 
 **Mitigations**
 - Semantic toxicity scoring
-- Post-inference output validation (Gate-2)
+- Post-inference safety enforcement (Gate-2)
 - Deterministic blocking of unsafe responses
 
 ---
@@ -140,6 +140,8 @@ Risks introduced by:
 - Combined heuristic + ML-based analysis
 - Defense-in-depth enforcement
 - Fail-closed execution model
+
+Semantic analysis of decoded payloads, where applicable.
 
 ---
 
@@ -186,6 +188,8 @@ These risks are:
 - Explicitly acknowledged
 - Continuously evaluated
 - Logged for forensic review
+
+Residual risks are monitored via audit telemetry rather than mitigated through prompt modification.
 
 ---
 
