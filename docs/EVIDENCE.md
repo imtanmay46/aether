@@ -104,7 +104,7 @@ This confirms **pre-inference enforcement**.
 **Artifact**
 
 - Request containing sensitive PII blocked  
-  <video src="https://github.com/user-attachments/assets/c5112453-9429-4562-ab76-5849328907f0" width="100%" controls></video>
+  <video src="https://github.com/user-attachments/assets/63787ceb-5a49-477b-ba84-345b4ab6ab19" width="100%" controls></video>
 
 **Demonstrates**
 
